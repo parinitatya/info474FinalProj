@@ -6,11 +6,23 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <!-- <div id="main">
-        <svg width="680" height="600" style="border: 1px solid #777;">
-        </svg>
-    </div> -->
+    <h1>Montly Max Record Temperatures for Major Cities Since 1880</h1>
+    <h3>Data: Weather History Data Scraped from Wunderground</h3>
+    <div>
+      <label for="cities">Select a city:</label>
+      <select id="cities">
+        <option value="HOU">Houston</option>
+        <option value="NYC">New York City</option>
+        <option value="SEA">Seattle</option>
+        <option value="MDW">Chicago</option>
+        <option value="PHL">Philadelphia</option>
+        <option value="PHX">Phoenix</option>
+      </select>
+      <div id="chart"></div>
+    </div>
+    
 </body>
 <script src="https://d3js.org/d3.v5.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/holtzy/D3-graph-gallery@master/LIB/d3-scale-radial.js"></script>
 <script src="./vis.js"></script>
 </html>
